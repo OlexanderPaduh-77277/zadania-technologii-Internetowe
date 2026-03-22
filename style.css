@@ -237,3 +237,167 @@ footer {
     max-width: 1200px;
     margin: 20px auto 0;
 }
+
+
+@media (max-width: 800px) {
+ 
+    .cv {
+        padding-bottom: 16px;
+    }
+ 
+    .container {
+        flex-direction: column;
+        padding: 0 14px;
+    }
+ 
+    .left_part-cv {
+        max-width: 100%;
+        width: 100%;
+        margin-right: 0;
+        margin-top: 14px;
+        padding: 24px 20px;
+        border-radius: 10px;
+    }
+ 
+    .personal_details {
+        flex-direction: row;
+        align-items: center;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+ 
+    .photo-wrapper {
+        flex-shrink: 0;
+    }
+ 
+    .cv_photo {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 0;
+    }
+ 
+    .title-cv {
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 4px;
+        text-align: left;
+    }
+ 
+    .subtitle-cv {
+        font-size: 16px;
+        margin-bottom: 0;
+        text-align: left;
+    }
+ 
+    .contacts_me {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px 16px;
+    }
+ 
+    .contact_me {
+        margin-left: 0;
+        font-size: 14px;
+        word-break: break-word;
+    }
+ 
+    .about_me-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+ 
+    .about_me-list .contact_me {
+        margin-left: 0;
+    }
+ 
+    .hobbies-list {
+        margin-left: 0;
+    }
+ 
+    .header {
+        font-size: 17px;
+        margin: 14px 0 10px;
+    }
+ 
+    .right_part-cv {
+        width: 100%;
+        margin-top: 12px;
+        padding: 24px 20px;
+        border-radius: 10px;
+    }
+ 
+    .profile_description {
+        font-size: 14px;
+    }
+ 
+    .description,
+    .education-item {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+ 
+    .languages .languages_list {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+ 
+    .skill {
+        margin-left: 8px;
+        gap: 8px;
+    }
+ 
+    .skill-name {
+        font-size: 14px;
+        min-width: 90px;
+    }
+ 
+    .skills_dot {
+        width: 11px;
+        height: 11px;
+    }
+ 
+    .project-title {
+        font-size: 15px;
+    }
+ 
+    footer {
+        margin: 12px 14px 0;
+        font-size: 13px;
+    }
+}
+ 
+@media (max-width: 420px) {
+ 
+    .container {
+        padding: 0 8px;
+    }
+ 
+    .personal_details {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+ 
+    .title-cv {
+        text-align: center;
+        font-size: 18px;
+    }
+ 
+    .subtitle-cv {
+        text-align: center;
+    }
+ 
+    .contacts_me {
+        grid-template-columns: 1fr;
+    }
+ 
+    .left_part-cv,
+    .right_part-cv {
+        padding: 18px 12px;
+    }
+ 
+    footer {
+        margin: 10px 8px 0;
+    }
+}
