@@ -50,13 +50,13 @@ body {
     background-color: #1A2B47;
     margin-top: 20px;
     max-width: 300px;
-
     /* padding: 50px 50px 50px 50px; */
     border-radius: 10px;
     color: #F5EFE1;
     margin-right: 10px;
-
+    padding: 50px;
 }
+
 
 
 .cv{
@@ -73,9 +73,12 @@ body {
 }
 
 .title-cv{
-    font-size: 24px;
+    font-size: 25px;
     margin-bottom: 10px;
     font-weight: bold;
+    margin-top: 50px;
+    color: #C0A664;
+    font-style: italic;
 }
 
 .subtitle-cv{
