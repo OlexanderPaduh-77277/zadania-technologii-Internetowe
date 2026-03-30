@@ -31,7 +31,7 @@ body {
     font-family: 'Times New Roman', serif;
     font-size: 16px;
     font-weight: 400;
-    background-color: #F8F9FA;
+    background-color: #244F43;
     color: #F5EFE1;
     line-height: 1.5;
 }
@@ -47,7 +47,7 @@ body {
 /* left-column */
 
 .left_part-cv {
-    background-color: #1A2B47;
+    background-color: #20483d;
     margin-top: 20px;
     max-width: 300px;
     /* padding: 50px 50px 50px 50px; */
@@ -60,7 +60,7 @@ body {
 
 
 .cv{
-    background-color: #05173C;
+    background-color: #19312a;
 }
 
 
@@ -151,7 +151,7 @@ body {
 .right_part-cv {
     width: 900px;
     padding: 30px;
-    background-color: #11223e;
+    background-color: #23483d;
     padding: 50px 50px 50px 50px;
     margin-top: 20px;
     border-radius: 10px;
@@ -231,7 +231,7 @@ body {
 footer {
     text-align: center;
     padding: 10px;
-    background: #1A2B47;
+    background: #1b352d;
     color: white;
     border-radius: 10px;
     max-width: 1200px;
