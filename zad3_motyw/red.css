@@ -87,8 +87,8 @@ body {
 }
 
 .cv_photo {
-    width: 180px;
-    height: 180px;
+    width: 305px;
+    height: auto;
     margin-bottom: 20px;
     align-items: center;
     border: 5px solid #05173C;
