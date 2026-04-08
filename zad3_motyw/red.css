@@ -87,11 +87,12 @@ body {
 }
 
 .cv_photo {
-    width: 305px;
-    height: auto;
-    margin-bottom: 20px;
-    align-items: center;
-    border: 5px solid #05173C;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+    border-width: 0px 100px 173.2px 100px;
+    border-color: transparent transparent url("picture/cv_photo.png")transparent;
 }
 
 
