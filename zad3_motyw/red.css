@@ -34,11 +34,11 @@ body {
     /* background-color: #911d1d; */
     color: #F5EFE1;
     line-height: 1.5;
+    position: absolute;
 }
 
 .container {
     background-color: #561919;
-    border-radius: 10px;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -51,7 +51,6 @@ body {
     margin-top: 20px;
     max-width: 300px;
     /* padding: 50px 50px 50px 50px; */
-    border-radius: 10px;
     color: #F5EFE1;
     margin-right: 10px;
     padding: 50px;
@@ -87,18 +86,20 @@ body {
 }
 
 .cv_photo {
-      display: inline-block;
-      width: 0;
-      height: 0;
-      border-style: solid;
-    border-width: 0px 100px 173.2px 100px;
-    border-color: transparent transparent url("picture/cv_photo.png")transparent;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    align-items: center;
+    border: 5px solid #05173C;
 }
 
-
 .headerPic {
-    width: 100%;
+      max-width: 82%;
     height: auto;
+    margin: 20px auto 0;
+    margin-left: 130px;
+
+    
 }
 .header {
     font-size: 20px;
@@ -139,8 +140,6 @@ body {
     /* color: #d4ddec; */
     background: rgba(74, 144, 217, 0.06);
     transition: border-color 0.2s, color 0.2s;
-   
-    
 }
 
 .hobbies-list li:hover {
@@ -155,11 +154,26 @@ body {
     background-color: #7e1616;
     padding: 50px 50px 50px 50px;
     margin-top: 20px;
-    border-radius: 10px;
-
-    /* margin-top: 50px; */
+    /* border-radius: 10px; */
+    
+    
+}
+.chenge-color-btn{
+    position: fixed;
+    left: auto;
+    right: 0;
+    bottom: 20px;
+    cursor: pointer;
+    background-color: #7E1616;
+    padding: 20px;
+    border-radius: 30px ;
+    /* border: #fff; */
 }
 
+.chenge-color-btn:hover{
+    background-color: #933333;
+
+}
 /* education */
 
 .education-list {
@@ -175,6 +189,9 @@ body {
     line-height: 1.6;
 }
 
+.green{
+    color:gray;
+}
 .languages .languages_list{
     margin-left: 20px;
 }
@@ -234,7 +251,7 @@ footer {
     padding: 10px;
     background: #561919;
     color: white;
-    border-radius: 10px;
+    border-radius: 50px;
     max-width: 1200px;
     margin: 20px auto 0;
 }
