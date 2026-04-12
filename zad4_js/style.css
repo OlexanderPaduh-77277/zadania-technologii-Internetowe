@@ -280,7 +280,7 @@ footer {
     transition: 0.4s;
 }
 .active, .accordion:hover {
-  background-color: #1f3c33
+  background-color: #474747
   /* display: block; */
 }
 
