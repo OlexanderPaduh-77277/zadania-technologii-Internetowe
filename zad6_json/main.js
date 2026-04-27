@@ -1,4 +1,4 @@
-const btnchenge = document.querySelector(".chenge-color-btn")
+const btnchenge = document.querySelector(".mid-red")
 const cv = document.querySelector(".cv")
 const footer = document.querySelector(".footer")
 const rightPart = document.querySelector(".right_part-cv")
@@ -83,8 +83,8 @@ function showContent(isActive){
 
     }
 
-
-    form.addEventListener('submit', function(e) {
+if (form) {
+form.addEventListener('submit', function(e) {
     e.preventDefault();
 
     errorms.innerText = "";
@@ -111,6 +111,10 @@ function showContent(isActive){
     alert("Success! Form submitted.");
     form.reset(); 
 });
+}
+
+
+   
 
 
 fetch('data.json')
@@ -128,7 +132,7 @@ function renderSkills(skills) {
   const container = document.querySelector('.skills_card');
   if (!container) return;
 
-  container.innerHTML = ''; // очищаємо статичний HTML
+  container.innerHTML = ''; 
 
   skills.forEach(skill => {
     const skillEl = document.createElement('div');
@@ -158,7 +162,7 @@ function renderProjects(projects) {
   const list = document.querySelector('.projects-list');
   if (!list) return;
 
-  list.innerHTML = ''; // очищаємо статичний HTML
+  list.innerHTML = ''; 
 
   projects.forEach(project => {
     const li = document.createElement('li');
