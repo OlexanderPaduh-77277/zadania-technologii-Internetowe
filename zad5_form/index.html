@@ -3,35 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>CV Padukh Oleksandr pl77277</title>
 </head>
 <body>
 
-    <div class="container">
-        <form id="SingUpForm">
-            <h2>Create Account</h2>
+    <div class="cv">
+
+        <header>
+            <img src="picture/header_pic-grean.png" alt="" class="headerPic">
+        </header>
+        <div class="chenge-color">
+            <button class="chenge-color-btn mid-red" type="button">Zmień color</button>
+        </div>
+
+        <main>
+            <div class="container dark-red">
+
+                <div class="left_part-cv">
+                    <section class="personal_details">
+                        <h1 class="title-cv">Padukh Oleksandr pl77277</h1>
+                        <h2 class="subtitle-cv">Junior Web Developer</h2>
+                        <div class="photo-wrapper">
+                            <img class="cv_photo" src="picture/cv_photo.png" alt="Moje zdjęcie">
+                        </div>
+                    </section>
+                    <section class="contact_inform">
+                        <h2 class="header">Dane kontaktowe</h2>
+                        <ul class="contacts_me">
+                            <li class="contact_me"><img class="contact-icon" src="picture/person.svg" alt="ikona">Padukh Oleksandr</li>
+                            <li class="contact_me">
+                                <img class="contact-icon" src="picture/email.svg" alt="ikona">
+                                <a href="mailto:opadukh1@stu.vistula.edu.pl">opadukh1@stu.vistula.edu.pl</a>
+                            </li>
+                            <li class="contact_me">
+                                <img class="contact-icon" src="picture/phone.svg" alt="phone number">
+                                <a href="tel:+48884042275">+48 884 042 275</a>
+                            </li>
+                            <li class="contact_me"><img class="contact-icon" src="picture/location.svg" alt="location">Warszawa, Polska</li>
+                        </ul>
+                    </section>
+                    <section class="about_me">
+                        <h2 class="header">O mnie</h2>
+                        <ul class="about_me-list">
+                            <li class="contact_me"><img class="contact-icon" src="picture/git.svg" alt="git ikon"><a href="https://github.com/OlexanderPaduh-77277" target="_blank" rel="noopener noreferrer">GitHub Profile</a></li>
+                            <li class="contact_me"><img class="contact-icon" src="picture/linkedin.svg" alt="linkedin ikon"><a href="https://www.linkedin.com/in/oleksandr-padukh-b36338281/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></li>
+                        </ul>
+                    </section>
+                    <section class="hobbies">
+                        <h2 class="header">Zainteresowania</h2>
+                        <ul class="hobbies-list">
+                            <li>Matematyka</li>
+                            <li>Szachy</li>
+                            <li>Czytanie</li>
+                            <li>Koszykówka</li>
+                        </ul>
+                    </section>
+                </div>
+
+                
             
-            <div class="input-group">
-                <label for="name">First Name</label>
-                <input type="text" id="name" placeholder="Enter your name">
-            </div>
+                <div class="right_part-cv">
+                    <section class="profile">
+                        <h2 class="header accordion">Profil</h2>
+                        <div class="accordion_content">
+                            <p class="profile_description description">
+                                Frontend Developer with a solid background in HTML, CSS, and JavaScript. I build interfaces that are easy to maintain and straightforward to extend — not just visually polished, but well-structured under the hood.  On the backend side, I've worked with FastAPI and Django, so I understand both ends of a request cycle and can work without constant hand-holding between teams.  Outside of web development, I've built Python-based Telegram bots using aiogram — one of them connected to an AI API and Google Calendar to automate scheduling tasks. It wasn't a tutorial project; I wrote it to solve an actual problem and iterated on it until it worked the way I needed.  I also have experience with C# and Windows Forms, which gave me a different perspective on how applications are structured when the browser isn't part of the equation — and a practical understanding of SQL databases that carries over into everything I build.
+                            </p>
+                        </div>
+                    </section>
+                    
+                    <section aria-labelledby="education-title">
+                        <h2 class="header accordion" id="education-title">Wykształcenie</h2>
+                        <div class="accordion_content">
+                            <ul class="education-list">
+                                <li class="education-item description">Ukończono 11 klas w 2025 roku (wykształcenie średnie).</li>
+                                <li class="education-item description">
+                                    Październik 2025 — Akademia Finansów i Biznesu Vistula, Warszawa<br>
+                                    Kierunek studiów: Informatyka
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
 
-            <div class="input-group">
-                <label for="LastName">Last Name</label>
-                <input type="text" id="LastName" placeholder="Enter last name">
-            </div>
-            
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input type="text" id="email" placeholder="email@example.com">
-            </div>
+                    <section class="languages">
+                        <h2 class="header accordion">Języki</h2>
+                        <div class="accordion_content">
+                            <ul class="languages_list">
+                                <li class="language">Angielski — Wyższy średniozaawansowany (B2)</li>
+                                <li class="language">Polski — Wyższy średniozaawansowany (B2)</li>
+                                <li class="language">Ukraiński — Biegły (C1)</li>
+                                <li class="language">Rosyjski — Ojczysty</li>
+                            </ul>
+                        </div>
+                    </section>
 
-            <button type="submit">Sign Up</button>
-            <p id="error"></p>
-        </form>
-    </div>
+                    <section class="skills">
+                        <h2 class="header accordion">Umiejętności techniczne</h2>
+                        <div class="accordion_content">
+                            <div class="skills_cards">
+                                <div class="skills_card">
+                                    <div class="skill">
+                                        <p class="skill-name">HTML5:</p>
+                                        <div class="dots">
+                                            <span class="skills_dot filled"></span>
+                                            <span class="skills_dot filled"></span>
+                                            <span class="skills_dot filled"></span>
+                                            <span class="skills_dot"></span>
+                                            <span class="skills_dot"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <p class="skill-name">CSS3:</p>
+                                        <div class="dots">
+                                            <span class="skills_dot filled"></span>
+                                            <span class="skills_dot filled"></span>
+                                            <span class="skills_dot filled"></span>
+                                            <span class="skills_dot"></span>
+                                            <span class="skills_dot"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <p class="skill-name">JavaScript:</p>
+                                        <div class="dots">
+                                            <span class="skills_dot filled"></span>
+                                            <span class="skills_dot filled"></span>
+                                            <span class="skills_dot"></span>
+                                            <span class="skills_dot"></span>
+                                            <span class="skills_dot"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <p class="skill-name">MySQL:</p>
+                                        <div class="dots">
+                                            <span class="skills_dot filled"></span>
+                                            <span class="skills_dot"></span>
+                                            <span class="skills_dot"></span>
+                                            <span class="skills_dot"></span>
+                                            <span class="skills_dot"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <p class="skill-name">Git:</p>
+                                        <div class="dots">
+                                            <span class="skills_dot filled"></span>
+                                            <span class="skills_dot filled"></span>
+                                            <span class="skills_dot"></span>
+                                            <span class="skills_dot"></span>
+                                            <span class="skills_dot"></span>
+                                        </div>
+                                    </div>
+                                </div><!-- /.skills_card -->
+                            </div><!-- /.skills_cards -->
+                        </div>
+                    </section>
+                    <section class="experience">
+                        <h2 class="header accordion ">Doświadczenie</h2>
+                        <div class="accordion_content">
+                            <article class="experience-item description">
+                                Niezależny Programista / Twórca portfolio na GitHubie
+                                2025 – obecnie
+                            </article>
+                            <article class="experience-item description">
+                                Tworzenie pierwszych stron i aplikacji internetowych 
+                                (front-end) w ramach zajęć z informatyki. Zakończenie nauki przedmiotu z
+                                najwyższą oceną, co zapewniło 
+                                mi solidne podstawy technologiczne do dalszego, samodzielnego rozwoju.
+                            </article>
+                        </div>
+                    </section>
 
-    <script src="main.js"></script>
+                    <section class="project-skills">
+                        <h2 class="header accordion">Projekty</h2>
+                        <ul class="projects-list accordion_content ">
+                            <li class="project-item">
+                                <h3 class="project-title">Bot Telegram do automatyzacji zadań</h3>
+                                <p class="description">
+                                    Stworzyłem bota Telegram w Pythonie, który automatyzuje zarządzanie zadaniami i przypomnieniami. Bot integruje się z API Google Calendar w celu planowania wydarzeń i wysyłania powiadomień, zwiększając produktywność użytkowników.
+                                </p>
+                            </li>
+                            <li class="project-item">
+                                <h3 class="project-title">Osobista strona portfolio</h3>
+                                <p class="description">
+                                    Stworzyłem responsywną osobistą stronę portfolio przy użyciu HTML, CSS i JavaScript. Strona prezentuje moje projekty, umiejętności i dane kontaktowe, zapewniając obecność w sieci dla potencjalnych pracodawców.
+                                </p>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+          
+             
+        </div>
+        </main>
+
+        <footer>
+            <section class="footer">
+                <p class="footer-text">© 2025 Padukh Oleksandr. Wszelkie prawa zastrzeżone.</p>
+            </section>
+        </footer>
+    </div><!-- /.cv -->
+
+<script src="main.js"></script>
 </body>
-</html>
+</html> 
