@@ -119,6 +119,7 @@ form.addEventListener('submit', function(e) {
 
 fetch('data.json')
   .then(response => {
+    console.log(response)
     if (!response.ok) throw new Error('Błąd ładowania danych');
     return response.json();
   })
