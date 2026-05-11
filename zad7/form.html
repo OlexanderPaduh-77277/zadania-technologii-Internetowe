@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Sign Up Form</title>
+</head>
+<body>
+
+    <div class="container">
+        <form id="SingUpForm">
+            <h2>Create Account</h2>
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>            
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="email@example.com">
+            </div>
+            <div class="input-group">
+                <label for="msg">Your message</label>
+                <textarea id="msg" name="message" placeholder="Enter your message" rows="5" ></textarea>
+
+            </div>
+            <button class="btn" type="submit">Send</button>
+            <a href="index.html" id="ReturnCv" class="btn">Return to CV</a>
+
+
+
+            <p id="error"></p>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

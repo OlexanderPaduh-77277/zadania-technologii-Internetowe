@@ -114,7 +114,7 @@ form.addEventListener('submit', function(e) {
 }
 
 
-   
+   //zadanie 6
 
 
 fetch('data.json')
@@ -182,9 +182,16 @@ function renderProjects(projects) {
     list.appendChild(li);
   });
 }
+
+
+
+
+
+
+
+//zadanie 7
 document.addEventListener("DOMContentLoaded", () => {
     if (!localStorage.getItem('skills')) {
-        // Jeśli localStorage jest pusty, spróbuj pobrać dane z JSON (opcjonalnie)
         fetch('data.json')
             .then(res => res.json())
             .then(data => {
@@ -192,7 +199,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 localStorage.setItem('projects', JSON.stringify(data.projects));
                 renderAll();
             }).catch(() => {
-                // Jeśli pliku nie ma, ustaw puste tablice
                 localStorage.setItem('skills', JSON.stringify([]));
                 localStorage.setItem('projects', JSON.stringify([]));
             });
@@ -208,7 +214,6 @@ function renderAll() {
     renderProjects(projects);
 }
 
-// Funkcja dodawania umiejętności
 function addSkill() {
     const name = document.getElementById('skillName').value;
     const level = parseInt(document.getElementById('skillLevel').value);
@@ -222,7 +227,6 @@ function addSkill() {
     }
 }
 
-// Funkcja dodawania projektu
 function addProject() {
     const title = document.getElementById('projTitle').value;
     const description = document.getElementById('projDesc').value;
@@ -237,7 +241,6 @@ function addProject() {
     }
 }
 
-// Funkcja usuwania (punkt 4 zadania)
 function deleteItem(index, type) {
     const data = JSON.parse(localStorage.getItem(type));
     data.splice(index, 1);
@@ -245,7 +248,6 @@ function deleteItem(index, type) {
     renderAll();
 }
 
-// Zaktualizowane funkcje renderujące (z przyciskiem "usuń")
 function renderSkills(skills) {
     const container = document.querySelector('.skills_card');
     if (!container) return;
